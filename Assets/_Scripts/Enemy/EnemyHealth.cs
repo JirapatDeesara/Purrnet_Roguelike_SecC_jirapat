@@ -5,13 +5,10 @@ using UnityEngine;
 
 public class EnemyHealth : NetworkIdentity
 {
-    [SerializeField]
-    private int maxHealth = 10;
-    [SerializeField]
-    private int expForKill = 1;
+    [SerializeField] private int maxHealth = 10;
+    [SerializeField] private int expForKill = 1;
 
-    [SerializeField, PurrReadOnly]
-    private int currentHealth;
+    [SerializeField, PurrReadOnly] private int currentHealth;
 
     public static Action<EnemyHealth> OnEnemyKilled;
     private void Awake()

@@ -5,20 +5,14 @@ using UnityEngine;
 
 public class GameState_LevelUp : StateNode
 {
-    [SerializeField]
-    private StateNode runningState;
-    [SerializeField]
-    private List<AttackData> allAttacks = new();
+    [SerializeField] private StateNode runningState;
+    [SerializeField] private List<AttackData> allAttacks = new();
 
     [Header("UI")]
-    [SerializeField]
-    private GameObject levelScreen;
-    [SerializeField]
-    private GameObject waitingScreen;
-    [SerializeField]
-    private Transform upgradeHolder;
-    [SerializeField]
-    private LevelEntry entryPrefab;
+    [SerializeField] private GameObject levelScreen;
+    [SerializeField] private GameObject waitingScreen;
+    [SerializeField] private Transform upgradeHolder;
+    [SerializeField] private LevelEntry entryPrefab;
 
     private List<PlayerID> readyPlayers = new();
 

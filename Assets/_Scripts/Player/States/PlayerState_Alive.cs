@@ -3,10 +3,8 @@ using UnityEngine;
 
 public class PlayerState_Alive : StateNode
 {
-    [SerializeField]
-    private GameObject graphics;
-    [SerializeField]
-    private PlayerHealth playerHealth;
+    [SerializeField] private GameObject graphics;
+    [SerializeField] private PlayerHealth playerHealth;
 
     public override void Enter(bool asServer)
     {

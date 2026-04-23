@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class GameState_Running : StateNode
 {
-    [SerializeField]
-    private StateNode lostState;
-    [SerializeField]
-    private StateNode levelState;
+    [SerializeField] private StateNode lostState;
+    [SerializeField] private StateNode levelState;
 
     public override void Enter(bool asServer)
     {

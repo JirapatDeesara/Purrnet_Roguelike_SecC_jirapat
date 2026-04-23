@@ -5,8 +5,7 @@ public abstract class AttackData : ScriptableObject
 {
     public string attackId;
     public string attackName;
-    [SerializeField]
-    private List<string> levelDescriptions = new();
+    [SerializeField] private List<string> levelDescriptions = new();
     public Sprite icon;
     public Attack prefab;
 

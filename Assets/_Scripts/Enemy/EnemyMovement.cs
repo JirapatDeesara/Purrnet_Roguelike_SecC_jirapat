@@ -4,8 +4,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class EnemyMovement : NetworkBehaviour, ITick
 {
-    [SerializeField]
-    private float speed = 2f;
+    [SerializeField] private float speed = 2f;
     private Rigidbody enemyRigidbody;
     private PlayerHealth targetPlayer;
     private float lastPlayerCheck;

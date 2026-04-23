@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class LevelManager : NetworkIdentity
 {
-    [SerializeField]
-    private int expToLevel = 5;
+    [SerializeField] private int expToLevel = 5;
     private SyncVar<int> exp = new();
     private SyncVar<int> level = new();
 

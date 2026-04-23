@@ -224,6 +224,7 @@ GameObject:
   - component: {fileID: 4819390029137065144}
   - component: {fileID: 4261649541964803816}
   - component: {fileID: 4285757965144690908}
+  - component: {fileID: 9174312457548084961}
   m_Layer: 5
   m_Name: LevelEntry
   m_TagString: Untagged
@@ -334,7 +335,34 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4261649541964803816}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 9174312457548084961}
+        m_TargetAssemblyTypeName: LevelEntry, Assembly-CSharp
+        m_MethodName: PickUpgrade
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &9174312457548084961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7270420821940128193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cb196a8b09972f4a8fcab71ce92b446, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelEntry
+  icon: {fileID: 4859299539474206469}
+  nameText: {fileID: 8716429453258475356}
+  descriptionText: {fileID: 7583048910774875941}
 --- !u!1 &9067085283578484777
 GameObject:
   m_ObjectHideFlags: 0

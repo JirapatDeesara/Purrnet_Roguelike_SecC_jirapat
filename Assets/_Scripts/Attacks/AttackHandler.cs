@@ -5,8 +5,7 @@ using UnityEngine;
 public class AttackHandler : NetworkBehaviour, ITick
 {
     private Dictionary<string, Attack> activeAttacks = new();
-    [SerializeField]
-    private List<AttackData> initialAttacks = new();
+    [SerializeField] private List<AttackData> initialAttacks = new();
 
     protected override void OnSpawned()
     {

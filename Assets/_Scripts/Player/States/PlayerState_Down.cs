@@ -6,18 +6,12 @@ using UnityEngine.UI;
 
 public class PlayerState_Down : StateNode
 {
-    [SerializeField]
-    private StateNode aliveState;
-    [SerializeField]
-    private float reviveDistance = 2f;
-    [SerializeField]
-    private float reviveTime = 3f;
-    [SerializeField]
-    private GameObject graphics;
-    [SerializeField]
-    private Image reviveUI;
-    [SerializeField]
-    private List<MonoBehaviour> components;
+    [SerializeField] private StateNode aliveState;
+    [SerializeField] private float reviveDistance = 2f;
+    [SerializeField] private float reviveTime = 3f;
+    [SerializeField] private GameObject graphics;
+    [SerializeField] private Image reviveUI;
+    [SerializeField] private List<MonoBehaviour> components;
     private SyncVar<float> reviveProgress = new SyncVar<float>(0f, ownerAuth: true);
 
     override public void Enter(bool asServer)

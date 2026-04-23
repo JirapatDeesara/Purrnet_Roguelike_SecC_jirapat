@@ -8,10 +8,8 @@ public class PlayerHealth : NetworkBehaviour
     private static readonly Dictionary<PlayerID, PlayerHealth> allPlayers = new();
     public static Dictionary<PlayerID, PlayerHealth> AllPlayers => allPlayers;
 
-    [SerializeField]
-    private SyncVar<int> maxHealth = new SyncVar<int>(100, ownerAuth: true);
-    [SerializeField]
-    private SyncVar<int> currentHealth = new SyncVar<int>(100, ownerAuth: true);
+    [SerializeField] private SyncVar<int> maxHealth = new SyncVar<int>(100, ownerAuth: true);
+    [SerializeField] private SyncVar<int> currentHealth = new SyncVar<int>(100, ownerAuth: true);
 
     public int MaxHealth => maxHealth.value;
     public int CurrentHealth => currentHealth.value;

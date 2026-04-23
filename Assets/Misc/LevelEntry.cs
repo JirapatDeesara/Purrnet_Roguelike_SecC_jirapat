@@ -5,12 +5,9 @@ using UnityEngine.UI;
 
 public class LevelEntry : MonoBehaviour
 {
-    [SerializeField]
-    private Image icon;
-    [SerializeField]
-    private TMP_Text nameText;
-    [SerializeField]
-    private TMP_Text descriptionText;
+    [SerializeField] private Image icon;
+    [SerializeField] private TMP_Text nameText;
+    [SerializeField] private TMP_Text descriptionText;
 
     private AttackData attack;
     private GameState_LevelUp levelUp;
